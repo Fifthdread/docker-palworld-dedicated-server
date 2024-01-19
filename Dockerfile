@@ -19,9 +19,9 @@ ENV TIMEZONE=Europe/Berlin \
 
 VOLUME ["/palworld"}
 
-EXPOSE 8211/tcp 8211/udp
+EXPOSE 8211/tcp 8211/ud
 
-RUN chmod +x servermanager.sh
 ADD servermanager.sh /servermanager.sh
+RUN chmod +x servermanager.sh
 
 CMD ["/servermanager.sh"]
