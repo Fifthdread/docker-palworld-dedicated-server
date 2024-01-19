@@ -21,6 +21,7 @@ VOLUME ["/palworld"}
 
 EXPOSE 8211/tcp 8211/udp
 
+RUN chmod +x servermanager.sh
 ADD servermanager.sh /servermanager.sh
 
 CMD ["/servermanager.sh"]
